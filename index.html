@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div id="createListDiv">
+            <h1>Simple Shopping List</h1>
+            <input type="text" id="shoppingListName" placeholder="New List" />
+            <button onclick="createShoppingList()">Create</button>
+        </div>
+        <div style="display:none;" id="ShoppingListDiv">
+            <h1 id="shoppingListTitle">New List</h1>
+            <input type="text" placeholder="New Item" />
+            <button>Add</button>
+            <ul id="shoppingListItems">
+                <li>Salad<button>delete</button><button>create</button></li>
+                <li>Milk<button>delete</button><button>create</button></li>
+                <li>Tomatoe<button>delete</button><button>create</button></li>
+            </ul>
+        </div>
+    </body>
+</html>
