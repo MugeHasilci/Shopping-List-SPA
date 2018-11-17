@@ -26,12 +26,22 @@ function drawItems() {
     var currentItem = currentList.items[i];
     var $li = $("<li>").html(currentItem.name)
     .attr("id", "item_" + i);
-    var $deleteBtn = $("<button>delete</button>").appendTo($li);
-    var $checkBtn = $("<button>check</button>").appendTo($li);
+    var $deleteBtn =
+        $("<button onclick='deleteItem(" + i + ")'>delete</button>").appendTo($li);
+    var $checkBtn =
+        $("<button onclick='checkItem(" + i + ")'>check</button>").appendTo($li);
 
     $li.appendTo($list);
   }
 }
+function deleteItem(index) {
+  currentList.items.splice(index, 1);
+  drawItems();
+}
+
+function checkItem(index) {
+   $("#item_" + index).addClass("checked");
+ }
 
 
 
