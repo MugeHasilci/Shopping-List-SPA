@@ -3,6 +3,7 @@
 
 * A Single Page Shopping List application
 * Written in pure JavaScript without any framework
+* The motivation for this project is to familiarise with Javascript
 
 Users can:
 * Create a new shopping list
